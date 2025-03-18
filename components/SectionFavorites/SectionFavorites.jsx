@@ -15,7 +15,7 @@ export default function SectionFavorites() {
           <h1>CRISPY CHICKEN SANDWICH</h1>
         </div>
         <div>
-          <p>ALL TIME FAVORITES</p>
+          <p id="favoritesParagraph">ALL TIME FAVORITES</p>
 
           <img
             src="/food/spicy-wings.jpg"

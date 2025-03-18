@@ -6,22 +6,7 @@ import { useRef } from "react";
 import { useRouter } from "next/router";
 
 export default function Navbar() {
-  const contactSecRef = useRef(null); // Create a ref to the contact section
-
-  // const handleContactClick = (e) => {
-  //   e.preventDefault(); // Prevent default navigation
-  //   router.push("/contact?scroll=true"); // Navigate with query parameter
-  // };
-
-  // const handleContactClick = (e) => {
-  //   e.preventDefault();
-  //   if (contactSecRef.current) {
-  //     contactSecRef.current.scrollIntoView({
-  //       behavior: "smooth",
-  //       block: "start",
-  //     });
-  //   }
-  // };
+  const contactSecRef = useRef(null);
 
   return (
     <nav>

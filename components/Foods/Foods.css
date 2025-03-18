@@ -39,6 +39,7 @@
 
 .foodsSection > div > div > * {
   margin-bottom: 10px;
+  color: black;
 }
 
 .foodsSection > div > div {

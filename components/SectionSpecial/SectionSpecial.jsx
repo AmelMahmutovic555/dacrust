@@ -12,8 +12,18 @@ export default function SectionSpecial() {
           >
             SPECIAL OF THE WEEK
           </h1>
-          <h2>YOUR NEW GUILTY PLEASURE</h2>
-          <p>
+          <h2
+            style={{
+              color: "black",
+            }}
+          >
+            YOUR NEW GUILTY PLEASURE
+          </h2>
+          <p
+            style={{
+              color: "black",
+            }}
+          >
             I'm a paragraph. Click here to add your own text and edit me. It’s
             easy. Just click “Edit Text” or double click me to add your own
             content and make changes to the font.

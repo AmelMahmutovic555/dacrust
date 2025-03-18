@@ -7,8 +7,18 @@ export default function DeliverSection() {
       <div className="shippingBox">
         <div>
           <h1>WE DELIVER</h1>
-          <h2>SATISFYING YOUR CRAVING JUST GOT EASIER</h2>
-          <p>
+          <h2
+            style={{
+              color: "black",
+            }}
+          >
+            SATISFYING YOUR CRAVING JUST GOT EASIER
+          </h2>
+          <p
+            style={{
+              color: "black",
+            }}
+          >
             I'm a paragraph. Click here to add your own text and edit me. I’m a
             great place for you to tell a story and let your users know a little
             more about you.

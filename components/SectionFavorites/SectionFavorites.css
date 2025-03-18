@@ -88,3 +88,7 @@
 .favoriteSection > div > div:nth-of-type(1) > h1 {
   width: 300px;
 }
+
+#favoritesParagraph {
+  color: black;
+}

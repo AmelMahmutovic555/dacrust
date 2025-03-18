@@ -68,6 +68,7 @@ section > div:last-of-type > h1 {
 
 .orderColor {
   margin-bottom: 30px;
+  color: black;
 }
 /* @media (min-width: 320px) and (max-width: 768px) {
   section {

@@ -167,7 +167,11 @@ export default function Contact() {
           <div>
             {messageInfo.map((info, index) => (
               <div key={index}>
-                <p>
+                <p
+                  style={{
+                    color: "black",
+                  }}
+                >
                   Name: {info?.firstName},<br />
                   <br />
                   Surname: {info?.lastName}, <br />
@@ -199,7 +203,7 @@ export default function Contact() {
           </div>
         </form>
       </div>
-      <div>
+      <div id="lastContactDiv">
         <h1>WE'RE OPEN</h1>
         <p>
           Monday-Friday : 11am-10pm
