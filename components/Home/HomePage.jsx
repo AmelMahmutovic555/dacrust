@@ -15,6 +15,7 @@ export default function HomePage() {
         header1={"OPEN FOR DELIVERY & PICK UP"}
         header2={"GET IT WHILE IT'S HOT"}
         btn={"Order Online"}
+        h1Style1={{ textAlign: "center" }}
       />
       <SectionRecipe />
       <SectionFavorites />
