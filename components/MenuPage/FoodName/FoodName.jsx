@@ -144,12 +144,12 @@ export default function FoodName({
         >
           {quantity === 1 && isBought1 && (
             <p>
-              You bought {quantity} piece of {heading11}
+              You added {quantity} piece of {heading11} in the cart
             </p>
           )}{" "}
           {quantity !== 1 && isBought1 && (
             <p>
-              You bought {quantity} pieces of {heading11}
+              You added {quantity} pieces of {heading11} in the cart
             </p>
           )}
         </div>
