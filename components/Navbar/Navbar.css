@@ -1,0 +1,60 @@
+@media (max-width: 768px) and (min-width: 320px) {
+  ul > li {
+    padding: 0 0.7rem;
+  }
+
+  ul > li:hover {
+    color: red;
+  }
+
+  ul > li:focus {
+    color: red;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  padding-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+ul > li:hover {
+  color: red;
+}
+
+ul > li:focus {
+  color: red;
+}
+
+.active {
+  color: red;
+}
+
+@media (min-width: 769px) {
+  ul > li {
+    list-style-type: none;
+    padding: 0 3rem;
+    cursor: pointer;
+    color: black;
+  }
+
+  ul > li:hover {
+    color: red;
+  }
+
+  ul > li:focus {
+    color: red;
+  }
+}

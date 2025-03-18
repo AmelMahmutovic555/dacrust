@@ -1,0 +1,60 @@
+@media (min-width: 768px) and (max-width: 1025px) {
+  .shippingBox {
+    width: 45rem;
+  }
+
+  .shippingBox > div > * {
+    width: 500px;
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1541px) {
+  .shippingBox {
+    width: 80rem;
+  }
+
+  .shippingBox > div > * {
+    width: 500px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+  .shippingBox {
+    width: 25rem;
+    height: 5px;
+  }
+
+  .shippingBox > div > * {
+    width: 300px;
+    text-align: start;
+  }
+
+  #shippingSection {
+    height: 50rem;
+  }
+}
+.shippingBox {
+  background-image: url("../../public/box.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 668px;
+  display: grid;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.shippingBox > div > * {
+  margin-bottom: 30px;
+}
+
+.shippingBox > div > h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: black;
+}
+
+.shippingBox > div > button {
+  width: 150px;
+}

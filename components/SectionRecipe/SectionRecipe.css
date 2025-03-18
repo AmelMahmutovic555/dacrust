@@ -1,0 +1,86 @@
+@media (min-width: 768px) and (max-width: 1541px) {
+  section {
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    justify-content: space-evenly;
+  }
+  section > div:last-of-type {
+    background-color: transparent;
+    grid-column-start: 2;
+  }
+
+  /* section > div {
+    background-color: white;
+    text-align: center;
+    padding: 25px 55px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  } */
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+  section {
+    display: grid;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+    justify-content: space-evenly;
+  }
+
+  section > div:last-of-type {
+    background-color: transparent;
+    /* grid-column-start: 2; */
+  }
+
+  section > div {
+    padding: 25px 15px;
+  }
+}
+
+section {
+  background-color: wheat;
+  /* display: grid;
+  grid-template-columns: 0.2fr 0.2fr 0.2fr;
+  justify-content: space-evenly; */
+}
+
+section > div {
+  background-color: white;
+  text-align: center;
+  padding: 25px 55px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+section > div > h1:nth-of-type(1),
+section > div > h1:nth-of-type(2),
+section > div > h1:nth-of-type(3) {
+  color: black;
+}
+
+section > div:first-of-type > h1 {
+  width: 150px;
+}
+
+section > div:last-of-type > h1 {
+  color: red;
+  align-self: center;
+  font-size: 30px;
+}
+
+.orderColor {
+  margin-bottom: 30px;
+}
+/* @media (min-width: 320px) and (max-width: 768px) {
+  section {
+    display: grid;
+    grid-template-rows: 0.5fr;
+    justify-content: center;
+  }
+
+  section > div {
+    background-color: white;
+    text-align: center;
+    padding: 25px 55px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+} */

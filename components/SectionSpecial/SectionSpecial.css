@@ -1,0 +1,69 @@
+@media (min-width: 768px) and (max-width: 1025px) {
+  .specialSection > div {
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    justify-content: space-around;
+    grid-gap: 2rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+  .specialSection > div > div:first-of-type {
+    width: 350px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    margin-left: 40px;
+    /* padding-inline: 100px; */
+  }
+
+  .specialSection > div > div:first-of-type > p {
+    width: 250px;
+    text-align: start;
+    margin-left: 30px;
+  }
+
+  .specialSection > div {
+    padding-left: 0;
+  }
+
+  .specialSection {
+    height: 50rem;
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1541px) {
+  .specialSection > div {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    justify-content: space-around;
+    grid-gap: 10rem;
+  }
+
+  .specialSection > div > div:first-of-type {
+    width: 600px;
+    background-color: white;
+    /* padding: 30px; */
+    padding-top: 70px;
+  }
+}
+
+.specialSection > div > div:first-of-type {
+  /* width: 600px; */
+  background-color: white;
+  /* padding: 30px; */
+  padding-top: 70px;
+}
+
+.specialSection > div > div:first-of-type > h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.specialSection > div > div:first-of-type > h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/*.specialSection > div > div:first-of-type > p {
+  max-width: 500px;
+} */

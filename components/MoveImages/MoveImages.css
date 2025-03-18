@@ -1,0 +1,12 @@
+.moveImagesSection {
+  display: inline-block;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.moveImagesSection > .moveImages {
+  width: 100rem;
+}
+
+.moveImagesSection > .moveImages > img {
+  display: inline-block;
+}

@@ -1,0 +1,90 @@
+@media (min-width: 768px) and (max-width: 1025px) {
+  .favoriteSection > div > div {
+    /* padding-inline: -30px; */
+    width: 250px;
+  }
+
+  .favoriteSection > div {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    background-color: red;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 863px) {
+  .favoriteSection > div {
+    /* padding-inline: -30px; */
+    /* width: 250px; */
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+  .favoriteSection > div {
+    display: grid;
+    grid-template-rows: 2fr;
+    height: 60rem;
+  }
+  /* .favoriteSection > div > div {
+    /* display: grid; */
+  /* width: 300px; */
+  /* } */
+}
+
+@media (min-width: 1025px) and (max-width: 1541px) {
+  .favoriteSection > div {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    background-color: wheat;
+  }
+
+  .favoriteSection > div > div {
+    background-color: white;
+    padding-inline: 80px;
+  }
+}
+
+.favoriteSection > div > div {
+  background-color: white;
+  /* padding-inline: 80px; */
+}
+
+.favoriteSection > div > div:nth-of-type(2) > p {
+  font-size: 30px;
+  width: 300px;
+  padding: 50px 0;
+}
+
+.favoriteSection > div > div:nth-of-type(1),
+.favoriteSection > div > div:nth-of-type(3) {
+  padding-top: 170px;
+  padding-bottom: 50px;
+}
+
+.favoriteSection > div > div:nth-of-type(1) > h1,
+.favoriteSection > div > div:nth-of-type(3) > h1,
+.favoriteSection > div > div:nth-of-type(2) > h1 {
+  color: black;
+}
+
+.favoriteSection > div > div:nth-of-type(2) > h1 {
+  margin-bottom: 50px;
+}
+
+.favoriteSection > div > div:nth-of-type(2) > button {
+  border: none;
+  padding: 10px 30px;
+  background-color: red;
+  color: white;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.favoriteSection > div > div:nth-of-type(2) > button:hover {
+  background-color: white;
+  color: red;
+}
+
+.favoriteSection > div > div:nth-of-type(1) > h1 {
+  width: 300px;
+}

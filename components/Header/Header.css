@@ -1,0 +1,55 @@
+/* @media (min-width: 1023) and (max-width: 2000) { */
+header > div:nth-of-type(1) > div {
+  width: 100%;
+  background-image: url("../../public/HeaderChicken.jpg");
+  width: 100%;
+  height: 533px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 25rem 0;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+}
+
+h1:nth-of-type(1) {
+  /* color: rgb(73, 41, 251); */
+  color: white;
+  font-weight: 900;
+}
+
+h1:nth-of-type(2) {
+  color: white;
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+button {
+  border: none;
+  padding: 10px 30px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: red;
+}
+/* } */
+
+@media (min-width: 320px) and (max-width: 1023) {
+  h1:nth-of-type(1) {
+    text-align: center;
+  }
+
+  h1:nth-of-type(2) {
+    text-align: center;
+  }
+
+  header > div > div > button {
+    margin-top: 40px;
+  }
+}

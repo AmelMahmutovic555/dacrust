@@ -1,0 +1,11 @@
+footer {
+  background-color: red;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer > div > p {
+  color: white;
+  font-weight: 900;
+}

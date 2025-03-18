@@ -1,0 +1,50 @@
+@media (min-width: 1024px) and (max-width: 1541px) {
+  .foodsSection > div {
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr;
+    justify-content: center;
+    grid-column-gap: 10rem;
+    margin-left: 5rem;
+  }
+
+  hr {
+    width: 370px;
+  }
+}
+
+@media (min-width: 427px) and (max-width: 1023px) {
+  .foodsSection > div {
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr;
+    justify-content: center;
+    grid-column-gap: 10rem;
+    /* width: 750px; */
+  }
+
+  hr {
+    width: 250px;
+  }
+}
+.foodsSection > div {
+  /* align-items: center; */
+  /* justify-items: center; */
+  padding: 50px 0;
+  /* margin-bottom: 10px; */
+  /* width: 100px; */
+}
+
+.foodsSection {
+  background-color: wheat;
+}
+
+.foodsSection > div > div > * {
+  margin-bottom: 10px;
+}
+
+.foodsSection > div > div {
+  margin-bottom: 50px;
+}
+hr {
+  /* width: 370px; */
+  background-color: red;
+}
