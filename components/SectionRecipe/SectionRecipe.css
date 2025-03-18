@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1541px) {
+@media (min-width: 427px) and (max-width: 1541px) {
   section {
     display: grid;
     grid-template-columns: 0.2fr 0.2fr 0.2fr;
@@ -68,6 +68,10 @@ section > div:last-of-type > h1 {
 
 .orderColor {
   margin-bottom: 30px;
+  color: black;
+}
+
+section > div > p {
   color: black;
 }
 /* @media (min-width: 320px) and (max-width: 768px) {

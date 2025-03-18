@@ -80,6 +80,10 @@ form > div > div > input {
   background-color: white;
 }
 
+form > div > div > label {
+  color: black;
+}
+
 form > div > div > input:hover {
   border-bottom: 3px solid gray;
 }
