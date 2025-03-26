@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import "./FoodName.css";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function FoodName({
   heading1,
@@ -20,6 +20,35 @@ export default function FoodName({
   const [isBought1, setIsBought1] = useState(false);
   const ref = useRef(null);
   const ref1 = useRef(null);
+  const [showRecipe1, setShowRecipe1] = useState(0);
+
+  useEffect(() => {
+    //   window.onscroll = () => {
+    window.addEventListener("scroll", function () {
+      const recipeView1 = document.querySelectorAll(
+        ".sectionOrderHeader > div"
+      )[0];
+      const topRecipe1 = recipeView1.getBoundingClientRect().bottom;
+      if (window.pageYOffset > topRecipe1) {
+        setShowRecipe1((prevShowRecipe) => {
+          if (prevShowRecipe >= 1) {
+            return prevShowRecipe;
+          }
+
+          prevShowRecipe + 0.1;
+        });
+      }
+    });
+    //   };
+  }, []);
+
+  useEffect(() => {
+    if (window.location.pathname === "/order") {
+      document.getElementsByClassName("sectionOrderHeader")[0].scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  }, []);
 
   function incrementPrice() {
     setQuantity((prevQuantity) => prevQuantity + 1);
@@ -195,14 +224,22 @@ export default function FoodName({
       </dialog>
       <section className="sectionOrderHeader">
         <div
-          style={{ marginBottom: "0", paddingBottom: "0", paddingRight: "0" }}
+          style={{
+            marginBottom: "0",
+            paddingBottom: "0",
+            paddingRight: "0",
+            opacity: showRecipe1,
+            transition: "opacity 1s ease-in-out",
+          }}
         >
           <h1 id="orderHeading">{heading1}</h1>
           <h2 id="orderHeading1">{heading2}</h2>
         </div>
       </section>
       <section className="sectionOrder">
-        <div>
+        <div
+          style={{ opacity: showRecipe1, transition: "opacity 1s ease-in-out" }}
+        >
           <div>
             <button
               className="menuBtn"

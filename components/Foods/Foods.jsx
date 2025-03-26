@@ -1,10 +1,41 @@
+"use client";
+import { useEffect, useState } from "react";
 import "./Foods.css";
 
 export default function Foods() {
+  const [showRecipe1, setShowRecipe1] = useState(0);
+
+  useEffect(() => {
+    //   window.onscroll = () => {
+    window.addEventListener("scroll", function () {
+      const recipeView1 = document.querySelectorAll(".foodsSection > div")[0];
+      const topRecipe1 = recipeView1.getBoundingClientRect().top;
+      if (window.pageYOffset > topRecipe1) {
+        setShowRecipe1((prevShowRecipe) => {
+          if (prevShowRecipe >= 1) {
+            return prevShowRecipe;
+          }
+
+          prevShowRecipe + 0.1;
+        });
+      }
+    });
+    //   };
+  }, []);
+
+  useEffect(() => {
+    if (window.location.pathname === "/menu") {
+      document.getElementsByClassName("foodsSection")[0].scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  }, []);
   return (
     <>
       <section className="foodsSection">
-        <div>
+        <div
+          style={{ opacity: showRecipe1, transition: "opacity 1s ease-in-out" }}
+        >
           <div>
             <h1 style={{ color: "black" }}>CHICKEN SANDWICH</h1>
             <hr />

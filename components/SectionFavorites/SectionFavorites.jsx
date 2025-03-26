@@ -1,10 +1,35 @@
+"use client";
 import Link from "next/link";
 import "./SectionFavorites.css";
+import { useState, useEffect } from "react";
 
 export default function SectionFavorites() {
+  const [showRecipe1, setShowRecipe1] = useState(0);
+
+  useEffect(() => {
+    //   window.onscroll = () => {
+    window.addEventListener("scroll", function () {
+      const recipeView1 = document.querySelectorAll(
+        ".favoriteSection > div"
+      )[0];
+      const topRecipe1 = recipeView1.getBoundingClientRect().bottom;
+      if (window.pageYOffset > topRecipe1) {
+        setShowRecipe1((prevShowRecipe) => {
+          if (prevShowRecipe >= 1) {
+            return prevShowRecipe;
+          }
+
+          prevShowRecipe + 0.1;
+        });
+      }
+    });
+    //   };
+  }, []);
   return (
     <section className="favoriteSection">
-      <div>
+      <div
+        style={{ opacity: showRecipe1, transition: "opacity 1s ease-in-out" }}
+      >
         <div>
           <img
             src="/food/crispy-chicken-sandwich-recipe.jpg"

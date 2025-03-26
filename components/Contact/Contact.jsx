@@ -20,6 +20,25 @@ export default function Contact() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [messageInfo, setMessageInfo] = useState([{}]);
+  const [showRecipe1, setShowRecipe1] = useState(0);
+
+  useEffect(() => {
+    //   window.onscroll = () => {
+    window.addEventListener("scroll", function () {
+      const recipeView1 = document.querySelectorAll(".contactSection > div")[0];
+      const topRecipe1 = recipeView1.getBoundingClientRect().bottom;
+      if (window.pageYOffset > topRecipe1) {
+        setShowRecipe1((prevShowRecipe) => {
+          if (prevShowRecipe >= 1) {
+            return prevShowRecipe;
+          }
+
+          prevShowRecipe + 0.1;
+        });
+      }
+    });
+    //   };
+  }, []);
 
   useEffect(() => {
     function handleContactClick() {
@@ -95,7 +114,9 @@ export default function Contact() {
 
   return (
     <section className="contactSection">
-      <div>
+      <div
+        style={{ opacity: showRecipe1, transition: "opacity 3s ease-in-out" }}
+      >
         <h1 id="contactH1">CONTACT US</h1>
         <h2 id="contactH2">DROP US A LINE AND WE'LL GET BACK TO YOU</h2>
         <form onSubmit={clickSubmit}>
@@ -203,7 +224,10 @@ export default function Contact() {
           </div>
         </form>
       </div>
-      <div id="lastContactDiv">
+      <div
+        id="lastContactDiv"
+        style={{ opacity: showRecipe1, transition: "opacity 5s ease-in-out" }}
+      >
         <h1>WE'RE OPEN</h1>
         <p>
           Monday-Friday : 11am-10pm
